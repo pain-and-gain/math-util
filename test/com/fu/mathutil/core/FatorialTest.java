@@ -22,7 +22,6 @@ public class FatorialTest {
         long expected = 120;
         long actual = MathUtil.getFactorial(5);
         Assert.assertEquals(expected, actual);
-
         assertEquals(720, MathUtil.getFactorial(6));
         assertEquals(1, MathUtil.getFactorial(0));
     }
