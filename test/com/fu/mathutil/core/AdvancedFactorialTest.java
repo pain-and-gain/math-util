@@ -5,6 +5,7 @@
  */
 package com.fu.mathutil.core;
 
+import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
@@ -33,7 +34,7 @@ public class AdvancedFactorialTest {
                 {2,2},
                 {3,6},
                 {4,24},
-                {5,120}
+                {6,120}
             };
         }
         
@@ -41,4 +42,9 @@ public class AdvancedFactorialTest {
         public int input;
         @Parameter(value=1)//map với cột 1 của cột data
         public long expected;
+    
+            @Test
+    public void checkFactorialGivenRightArgumentReturnswell() {
+        assertEquals(expected, MathUtil.getFactorial(input));
     }
+}

@@ -1362,7 +1362,7 @@ is divided into following sections:
             </customizeDebuggee>
         </j2seproject3:debug>
     </target>
-    <target depends="init,compile,-debug-start-debugger,-debug-start-debuggee" description="Debug project in IDE." if="netbeans.home" name="debug"/>
+    <target depends="init,compile,test,-debug-start-debugger,-debug-start-debuggee" description="Debug project in IDE." if="netbeans.home" name="debug"/>
     <target depends="init" if="netbeans.home" name="-debug-start-debugger-stepinto">
         <j2seproject1:nbjpdastart stopclassname="${main.class}"/>
     </target>
